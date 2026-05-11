@@ -225,7 +225,7 @@ textarea {
   position: relative;
   z-index: 2;
   width: min(760px, calc(100% - 36px));
-  margin: 0 0 155px clamp(18px, 7vw, 96px);
+  margin: 0 0 218px clamp(18px, 7vw, 96px);
 }
 
 .eyebrow {
@@ -239,13 +239,13 @@ textarea {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(4rem, 9vw, 8.8rem);
+  font-size: clamp(3.8rem, 8vw, 7.4rem);
   line-height: 0.9;
   letter-spacing: 0;
 }
 
 .hero p:not(.eyebrow) {
-  max-width: 620px;
+  max-width: 590px;
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.05rem, 2vw, 1.35rem);
@@ -257,7 +257,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .btn {
@@ -343,9 +343,10 @@ textarea {
 
 .quick-strip article {
   display: flex;
+  align-items: center;
   gap: 16px;
-  min-height: 136px;
-  padding: 28px clamp(18px, 4vw, 48px);
+  min-height: 124px;
+  padding: 24px clamp(18px, 4vw, 44px);
   background: var(--paper);
 }
 
@@ -391,12 +392,12 @@ textarea {
 }
 
 .section {
-  padding: clamp(68px, 8vw, 118px) clamp(18px, 5vw, 72px);
+  padding: clamp(58px, 7vw, 96px) clamp(18px, 5vw, 72px);
 }
 
 .section-heading {
   width: min(780px, 100%);
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .section-heading.split {
@@ -417,7 +418,7 @@ textarea {
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
 }
 
 .service-card {
@@ -524,7 +525,7 @@ textarea {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  gap: 20px;
   min-height: 310px;
 }
 
@@ -708,36 +709,9 @@ textarea {
 
 .tryon-visual img {
   width: 100%;
-  aspect-ratio: 0.92;
+  aspect-ratio: 1.03;
   object-fit: cover;
-}
-
-.frame-preview {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  display: flex;
-  gap: 8px;
-  width: 42%;
-  transform: translateX(-50%) rotate(-1deg);
-}
-
-.frame-preview::before {
-  position: absolute;
-  top: 45%;
-  left: 48%;
-  width: 10%;
-  height: 3px;
-  background: #111;
-  content: "";
-}
-
-.frame-preview span {
-  width: 50%;
-  aspect-ratio: 1.42;
-  border: 7px solid #111;
-  border-radius: 42% 42% 45% 45%;
-  background: rgba(255, 255, 255, 0.07);
+  object-position: center;
 }
 
 .steps {
@@ -869,11 +843,11 @@ textarea {
 .review-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
 .review-grid article {
-  min-height: 220px;
+  min-height: 196px;
   padding: 24px;
   border: 1px solid #e0d5ca;
   border-radius: var(--radius);
@@ -1069,7 +1043,7 @@ textarea {
 
   .hero-content {
     width: calc(100% - 32px);
-    margin: 0 16px 230px;
+    margin: 0 16px 246px;
   }
 
   .hero h1 {
