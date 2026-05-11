@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Site modelo completo para uma ótica com catálogo, lentes, agendamento de exame, marcas, FAQ e contato."
+    />
+    <title>Ótica Aurora | Óculos, lentes e cuidado visual</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ótica Aurora">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M8 25c5-9 12-11 16-3c4-8 11-6 16 3" />
+            <circle cx="15" cy="27" r="8" />
+            <circle cx="33" cy="27" r="8" />
+          </svg>
+        </span>
+        <span>
+          <strong>Ótica Aurora</strong>
+          <small>visão com precisão</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav aria-label="Navegação principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#lentes">Lentes</a>
+        <a href="#exame">Exame</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="header-action" href="#exame">Agendar exame</a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <picture class="hero-media">
+          <source
+            media="(max-width: 720px)"
+            srcset="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1800&q=82"
+            alt="Pessoa usando óculos de armação elegante"
+          />
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Ótica completa em atendimento, lentes e estilo</p>
+          <h1>Ótica Aurora</h1>
+          <p>
+            Armações selecionadas, lentes de alta performance e exame de vista com uma jornada simples,
+            consultiva e feita para o seu dia a dia.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#catalogo">Ver armações</a>
+            <a class="btn secondary" href="#exame">Marcar avaliação</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Destaques da ótica">
+          <div>
+            <strong>+450</strong>
+            <span>modelos disponíveis</span>
+          </div>
+          <div>
+            <strong>24h</strong>
+            <span>para lentes simples*</span>
+          </div>
+          <div>
+            <strong>98%</strong>
+            <span>clientes satisfeitos</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Benefícios rápidos">
+        <article>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 12h16M12 4v16" /></svg>
+          </span>
+          <div>
+            <strong>Exame completo</strong>
+            <p>Triagem, refração e orientação para sua rotina visual.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM8 10h8M8 14h5" /></svg>
+          </span>
+          <div>
+            <strong>Compra assistida</strong>
+            <p>Escolha por formato de rosto, medida, uso e orçamento.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 17l6-10l6 10M8 14h8" /></svg>
+          </span>
+          <div>
+            <strong>Lentes premium</strong>
+            <p>Antirreflexo, filtro de luz azul, fotossensíveis e multifocais.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section intro" id="servicos">
+        <div class="section-heading">
+          <p class="eyebrow">Tudo no mesmo lugar</p>
+          <h2>Uma experiência de ótica mais simples, bonita e confiável.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=900&q=80"
+              alt="Óculos sobre mesa com ambiente de ótica"
+            />
+            <div>
+              <h3>Óculos de grau</h3>
+              <p>Armações femininas, masculinas, infantis, esportivas e modelos leves para uso prolongado.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=900&q=80"
+              alt="Óculos de sol em exposição"
+            />
+            <div>
+              <h3>Óculos de sol</h3>
+              <p>Proteção UV, lentes polarizadas e curadoria de marcas para praia, direção e moda.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1580281657527-47f249e8f4df?auto=format&fit=crop&w=900&q=80"
+              alt="Profissional realizando exame de vista"
+            />
+            <div>
+              <h3>Lentes e exame</h3>
+              <p>Orientação técnica para escolher a lente certa depois da avaliação visual.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section catalog" id="catalogo">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Catálogo inteligente</p>
+            <h2>Encontre a armação pelo seu estilo de uso.</h2>
+          </div>
+          <div class="catalog-tools" aria-label="Filtros de catálogo">
+            <label class="search-box">
+              <span class="sr-only">Buscar produto</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 18a8 8 0 1 1 5.7-2.3L21 21" /></svg>
+              <input type="search" placeholder="Buscar modelo, marca ou material" data-search />
+            </label>
+            <select data-sort aria-label="Ordenar produtos">
+              <option value="featured">Mais relevantes</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="price-desc">Maior preço</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-row" data-filters aria-label="Categorias de armações">
+          <button class="filter active" type="button" data-filter="todos">Todos</button>
+          <button class="filter" type="button" data-filter="grau">Grau</button>
+          <button class="filter" type="button" data-filter="sol">Sol</button>
+          <button class="filter" type="button" data-filter="infantil">Infantil</button>
+          <button class="filter" type="button" data-filter="premium">Premium</button>
+        </div>
+
+        <div class="product-grid" data-products></div>
+      </section>
+
+      <section class="section lenses" id="lentes">
+        <div class="section-heading">
+          <p class="eyebrow">Lentes por necessidade</p>
+          <h2>Tratamentos que melhoram nitidez, conforto e proteção.</h2>
+        </div>
+        <div class="lens-layout">
+          <article class="lens-card active" data-lens-card>
+            <button type="button" aria-expanded="true">
+              <span>Multifocais digitais</span>
+              <strong>Para perto, intermediário e longe</strong>
+            </button>
+            <p>
+              Indicadas para quem precisa alternar leitura, computador e distância com transição suave e
+              campo visual mais confortável.
+            </p>
+          </article>
+          <article class="lens-card" data-lens-card>
+            <button type="button" aria-expanded="false">
+              <span>Antirreflexo premium</span>
+              <strong>Mais transparência e menos brilho</strong>
+            </button>
+            <p>
+              Reduz reflexos em telas, luz artificial e direção noturna, além de facilitar a limpeza das lentes.
+            </p>
+          </article>
+          <article class="lens-card" data-lens-card>
+            <button type="button" aria-expanded="false">
+              <span>Fotossensíveis</span>
+              <strong>Clareiam e escurecem conforme a luz</strong>
+            </button>
+            <p>
+              Uma solução prática para quem transita entre ambientes internos e externos durante o dia.
+            </p>
+          </article>
+          <article class="lens-card" data-lens-card>
+            <button type="button" aria-expanded="false">
+              <span>Luz azul-violeta</span>
+              <strong>Conforto para rotinas digitais</strong>
+            </button>
+            <p>
+              Ajuda a reduzir desconforto em longas jornadas de tela, mantendo boa reprodução de cores.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tryon">
+        <div class="tryon-visual" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=80"
+            alt=""
+          />
+          <div class="frame-preview">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="tryon-copy">
+          <p class="eyebrow">Prova consultiva</p>
+          <h2>Escolha com orientação, medida e comparação de modelos.</h2>
+          <p>
+            O atendimento combina preferências de estilo, medidas da armação atual, largura do rosto e tipo de
+            lente para recomendar modelos com melhor encaixe.
+          </p>
+          <div class="steps">
+            <span>1. Perfil</span>
+            <span>2. Medidas</span>
+            <span>3. Curadoria</span>
+            <span>4. Ajuste final</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section exam" id="exame">
+        <div class="exam-copy">
+          <p class="eyebrow">Agendamento</p>
+          <h2>Marque uma avaliação visual em poucos passos.</h2>
+          <p>
+            Escolha o melhor horário e conte para nossa equipe o que você precisa. O formulário abaixo simula
+            a captação de leads para WhatsApp, CRM ou e-mail.
+          </p>
+          <ul class="check-list">
+            <li>Atendimento com hora marcada</li>
+            <li>Orçamento de armação e lente no mesmo dia</li>
+            <li>Ajuste, limpeza e manutenção pós-compra</li>
+          </ul>
+        </div>
+        <form class="appointment-form" data-form>
+          <div class="form-row">
+            <label>
+              Nome
+              <input name="nome" type="text" placeholder="Seu nome" required />
+            </label>
+            <label>
+              Telefone
+              <input name="telefone" type="tel" placeholder="(00) 00000-0000" required />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              Serviço
+              <select name="servico" required>
+                <option value="">Selecione</option>
+                <option>Exame de vista</option>
+                <option>Óculos de grau</option>
+                <option>Lentes de contato</option>
+                <option>Ajuste ou manutenção</option>
+              </select>
+            </label>
+            <label>
+              Melhor período
+              <select name="periodo" required>
+                <option value="">Selecione</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Observação
+            <textarea name="observacao" rows="4" placeholder="Ex.: tenho receita, uso multifocal, quero óculos de sol..."></textarea>
+          </label>
+          <button class="btn primary full" type="submit">Enviar solicitação</button>
+          <p class="form-status" role="status" data-form-status></p>
+        </form>
+      </section>
+
+      <section class="section brands" id="marcas">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Marcas e linhas</p>
+            <h2>Curadoria para diferentes estilos, idades e rotinas.</h2>
+          </div>
+          <p>
+            Um site de ótica completo precisa deixar claro que vende moda, saúde visual e confiança técnica ao
+            mesmo tempo.
+          </p>
+        </div>
+        <div class="brand-cloud" aria-label="Marcas atendidas">
+          <span>Ray-Ban</span>
+          <span>Oakley</span>
+          <span>Vogue</span>
+          <span>Prada</span>
+          <span>Armani</span>
+          <span>Tom Ford</span>
+          <span>Kids Flex</span>
+          <span>Aurora Lab</span>
+        </div>
+      </section>
+
+      <section class="section reviews">
+        <div class="section-heading">
+          <p class="eyebrow">Confiança</p>
+          <h2>Atendimento que acompanha antes, durante e depois da compra.</h2>
+        </div>
+        <div class="review-grid">
+          <article>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>"A equipe explicou as diferenças das lentes e ajustou a armação até ficar perfeita."</p>
+            <strong>Mariana Lopes</strong>
+          </article>
+          <article>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>"Comprei óculos para trabalho e direção. O processo foi rápido e muito organizado."</p>
+            <strong>Rafael Costa</strong>
+          </article>
+          <article>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p>"Gostei do catálogo filtrado por estilo. Cheguei na loja já sabendo quais provar."</p>
+            <strong>Bianca Martins</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="section-heading">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2>Dúvidas comuns antes de comprar óculos.</h2>
+        </div>
+        <div class="faq-list" data-faq>
+          <article>
+            <button type="button" aria-expanded="false">Preciso levar receita para comprar óculos?</button>
+            <p>Se já tiver uma receita válida, leve para orçamento. Se não tiver, você pode agendar uma avaliação visual.</p>
+          </article>
+          <article>
+            <button type="button" aria-expanded="false">Quanto tempo demora para ficar pronto?</button>
+            <p>Lentes simples podem ficar prontas em até 24 horas, dependendo da disponibilidade. Multifocais e tratamentos especiais variam conforme o laboratório.</p>
+          </article>
+          <article>
+            <button type="button" aria-expanded="false">Vocês fazem ajuste de armação?</button>
+            <p>Sim. A loja oferece ajuste, limpeza e manutenção para garantir encaixe confortável no uso diário.</p>
+          </article>
+          <article>
+            <button type="button" aria-expanded="false">Como escolher a lente ideal?</button>
+            <p>A escolha considera grau, rotina, sensibilidade à luz, tempo de tela, direção, trabalho e preferência estética.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contato">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Pronto para enxergar melhor?</h2>
+          <p>Rua das Palmeiras, 245 - Centro • Segunda a sábado, 9h às 19h</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn secondary dark" href="tel:+5511999999999">Ligar agora</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="#inicio" aria-label="Ótica Aurora">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M8 25c5-9 12-11 16-3c4-8 11-6 16 3" />
+              <circle cx="15" cy="27" r="8" />
+              <circle cx="33" cy="27" r="8" />
+            </svg>
+          </span>
+          <span>
+            <strong>Ótica Aurora</strong>
+            <small>site modelo completo</small>
+          </span>
+        </a>
+        <p>Este é um projeto demonstrativo para apresentar uma ótica moderna, completa e pronta para captação.</p>
+      </div>
+      <div>
+        <strong>Produtos</strong>
+        <a href="#catalogo">Óculos de grau</a>
+        <a href="#catalogo">Óculos de sol</a>
+        <a href="#lentes">Lentes especiais</a>
+      </div>
+      <div>
+        <strong>Atendimento</strong>
+        <a href="#exame">Agendar exame</a>
+        <a href="#contato">Localização</a>
+        <a href="#contato">WhatsApp</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
